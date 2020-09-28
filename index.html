@@ -4,82 +4,137 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
-    <link rel="icon" type="image/png" href="/Figma/favi.png"/>
     <title>Figma</title>
   </head>
   <body>
-    <nav>
-        <img src="logo.svg" alt="Logo">
-        <button class="hamburger" id="hamburger">☰</button>
-        <ul class="nav-ul">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#" class="active_btn active_btn_slide">Sign Up</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <div class="content">
-            <div class="left">
-                <h1>A better way to design.</h1>
-                <p>Design, prototype, and collaborate all in the browser - with Figma.</p>
-                <button class="active_btn">Try Figma for Free</button>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+            Andrew <span>Tud</span>.
+            </a>
+            <div class="links">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">TimeTable</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="right">
-                <img src="svgs/Report-bro.svg" alt="Logo">
-            </div>
+            <button class="btn-blue">
+            Membership
+            </button>
+        </nav>
+
+        <div class="header-section">
+            <h1 data-aos="fade-up">Personal Trainer</h1>
+            <h3>Andrew Tudders - Strength Training</h3>
+            <div class="underline"></div>
         </div>
+
+        <i class="fas fa-angle-down arrow-icon"></i>
+    </header>
+    
+    <section id="form-container">
+        <form data-aos="fade-up">
+            <h1>Get in touch</h1>
+            <div class="fields">
+                <div class="inputs">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Phone">
+                </div>
+                <textarea cols="76" rows="12" placeholder="Message"></textarea>
+            </div>
+            <button class="btn-blue">
+                Send Message  <i class="fas fa-angle-right next-icon"></i>
+            </button>
+        </form>
+    </section>
+
+    <main class="container">
+
+        <!-- Blobs -->
+
+        <img id="blob" class="blob1" sr/images/blob1.svg" alt="blob">
+        <img id="blob" class="blob2" data-aos="fade-up" src="/images/blob2.svg" alt="blob">
+        <img id="blob" class="blob3" data-aos="fade-up" src="/images/blob3.svg" alt="blob">
+
+        <!-- Blobs -->
+
+        <section class="card card-top">
+            <img src="/images/1.svg" alt="#" data-aos="fade-up">
+            <div class="card-text"  data-aos="fade-left">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, autem iste. Quaerat, fugiat dignissimos explicabo sequi animi quod, dolor vitae voluptas voluptatem possimus vel optio. Aliquid minima quis modi est?</p>
+                <a href="#" class="btn">More Info</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="/images/2.svg" alt="#" data-aos="fade-up">
+            <div class="card-text"  data-aos="fade-right">
+                <h1>About You</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, autem iste. Quaerat, fugiat dignissimos explicabo sequi animi quod, dolor vitae voluptas voluptatem possimus vel optio. Aliquid minima quis modi est?</p>
+                <a href="#" class="btn">More Info</a>
+            </div>
+        </section>
+        
+        <section class="card">
+            <img src="/images/3.svg" alt="#" data-aos="fade-up">
+            <div class="card-text" data-aos="fade-left">
+                <h1>Free Consultation</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, autem iste. Quaerat, fugiat dignissimos explicabo sequi animi quod, dolor vitae voluptas voluptatem possimus vel optio. Aliquid minima quis modi est?</p>
+                <a href="#" class="btn">More Info</a>
+            </div>
+        </section>
     </main>
 
-    <section>
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#141E30" fill-opacity="1" d="M0,256L120,218.7C240,181,480,107,720,101.3C960,96,1200,160,1320,192L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
-        <div class="social">
-            <div class="box1" data-aos="fade-right">
-                <h1>Stay ahead, stay inspired</h1>
-                <p>Our tech community and event projects provide a cerebral social platform outside of work to help keep you on your toes.</p>
-                <button class="get_involved_btn active_btn">Get Involved</button>
-            </div>
-            <div class="box2" data-aos="fade-left">
-                <img src="https://www.oliverbernard.co.uk/img/general/event-talk.jpg" alt="social event">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,32L60,64C120,96,240,160,360,165.3C480,171,600,117,720,133.3C840,149,960,235,1080,261.3C1200,288,1320,256,1380,240L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+
+    <article>
+        <div class="twin-container">
+            <div class="twin">
+                <h1>What Is Your #1 Goal?</h1>
+                <button class="btn-happen btn-blue">Let's Make It Happen <i class="fas fa-angle-right next-icon"></i></button>
             </div>
         </div>
-    </section>
+    </article>
 
-    <section>
-        <footer>
-            <ul class="footer_ul">
+    <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L60,277.3C120,267,240,245,360,202.7C480,160,600,96,720,90.7C840,85,960,139,1080,186.7C1200,235,1320,277,1380,298.7L1440,320L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+    <div class="social-media">
+        <div class="social-tags">
+            <div class="follow">Find Me On Social Media</div>
+            <ul>
                 <li>
-                    <h1>Figma.</h1>
-                    <p>@2020 Saxon Du Plooy</p>
-                </li>
-                <li>
-                    <h1>Contact Us</h1>
-                    <a href="https://www.linkedin.com/in/saxon-du-plooy-058523171/">LinkedIn</a> <br />
-                    <a href="https://www.instagram.com/sdplooy/">Instagram</a>
-                    <p>+44 7954659***</p>
-                </li>
-                <li>
-                    <h1>About</h1>
-                    <p>This is a response website created by <br /> Saxon Du Plooy for practise.</p>
-                </li>
-                <li>
-                    <h1>Location</h1>
-                    <p>In his bedroom.</p>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-facebook-messenger"></i></a>
                 </li>
             </ul>
-        </footer>
-    </section>
+        </div>
+        <div class="socials">
+            <img src="/images/Mobile Marketing-rafiki.svg" alt="social media" data-aos="fade-right">
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L60,80C120,64,240,32,360,37.3C480,43,600,85,720,96C840,107,960,85,1080,112C1200,139,1320,213,1380,250.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+
+    <footer></footer>
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
     <script>
         AOS.init({
-            offset: 200
+            offset: 250
         });
-    </script>
+      </script>
   </body>
 </html>
