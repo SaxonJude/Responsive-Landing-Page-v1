@@ -4,17 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
     <link rel="icon" type="image/png" href="/Figma/favi.png"/>
     <title>Figma</title>
   </head>
   <body>
-
-    <section>
-        <button></button>
-    </section>
-
     <nav>
-        <img src="/Figma/logo.svg" alt="Logo">
+        <img src="logo.svg" alt="Logo">
         <button class="hamburger" id="hamburger">☰</button>
         <ul class="nav-ul">
             <li><a href="#">Features</a></li>
@@ -34,33 +30,56 @@
                 <button class="active_btn">Try Figma for Free</button>
             </div>
             <div class="right">
-                <img src="/Figma/Design tools-bro.svg" alt="Logo">
+                <img src="svgs/Report-bro.svg" alt="Logo">
             </div>
-        </div>
-        <div class="logos">
-            <img src="/Figma/svgs/signnow-ar21.svg" alt="logo">
-            <img src="/Figma/svgs/buzzfeed-ar21.svg" alt="logo">
-            <img src="/Figma/svgs/cocacola-ar21.svg" alt="logo">
-            <img src="/Figma/svgs/html5up-ar21.svg" alt="logo">
-            <img src="/Figma/svgs/mapr-ar21.svg" alt="logo">
-            <img src="/Figma/svgs/people-ar21.svg" alt="logo">
         </div>
     </main>
 
-    <section class="bottom_content">
+    <section>
         <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#141E30" fill-opacity="1" d="M0,256L120,218.7C240,181,480,107,720,101.3C960,96,1200,160,1320,192L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
         <div class="social">
-            <div class="box1">
+            <div class="box1" data-aos="fade-right">
                 <h1>Stay ahead, stay inspired</h1>
                 <p>Our tech community and event projects provide a cerebral social platform outside of work to help keep you on your toes.</p>
-                <button>Get Involved</button>
+                <button class="get_involved_btn active_btn">Get Involved</button>
             </div>
-            <div class="box2">
-                <img src="https://www.oliverbernard.co.uk/img/general/event-talk.jpg" alt="">
+            <div class="box2" data-aos="fade-left">
+                <img src="https://www.oliverbernard.co.uk/img/general/event-talk.jpg" alt="social event">
             </div>
         </div>
     </section>
 
+    <section>
+        <footer>
+            <ul class="footer_ul">
+                <li>
+                    <h1>Figma.</h1>
+                    <p>@2020 Saxon Du Plooy</p>
+                </li>
+                <li>
+                    <h1>Contact Us</h1>
+                    <a href="https://www.linkedin.com/in/saxon-du-plooy-058523171/">LinkedIn</a> <br />
+                    <a href="https://www.instagram.com/sdplooy/">Instagram</a>
+                    <p>+44 7954659***</p>
+                </li>
+                <li>
+                    <h1>About</h1>
+                    <p>This is a response website created by <br /> Saxon Du Plooy for practise.</p>
+                </li>
+                <li>
+                    <h1>Location</h1>
+                    <p>In his bedroom.</p>
+                </li>
+            </ul>
+        </footer>
+    </section>
+
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+    <script>
+        AOS.init({
+            offset: 200
+        });
+    </script>
   </body>
 </html>
